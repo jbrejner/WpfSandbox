@@ -28,8 +28,6 @@ namespace WpfApplication1
         {
             if (File.Exists("LangDe"))
             {
-                Thread.CurrentThread.CurrentUICulture = new CultureInfo("de");
-                Thread.CurrentThread.CurrentCulture = new CultureInfo("de");
                 Properties.Resources.Culture = new CultureInfo("de");
                 this.Language = XmlLanguage.GetLanguage("de");
                 //FrameworkElement.LanguageProperty.OverrideMetadata(typeof(FrameworkElement), new FrameworkPropertyMetadata("de"));

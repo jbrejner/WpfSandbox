@@ -23,6 +23,12 @@ namespace WpfApplication1
             //Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("de");
             //Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("de");
             //FrameworkElement.LanguageProperty.OverrideMetadata(typeof(FrameworkElement), new FrameworkPropertyMetadata(XmlLanguage.GetLanguage(CultureInfo.CurrentUICulture.IetfLanguageTag)));
+            if (File.Exists("LangDe"))
+            {
+                Thread.CurrentThread.CurrentUICulture = new CultureInfo("de");
+                Thread.CurrentThread.CurrentCulture = new CultureInfo("de");
+                //FrameworkElement.LanguageProperty.OverrideMetadata(typeof(FrameworkElement), new FrameworkPropertyMetadata("de"));
+            }
         }
     }
 }
